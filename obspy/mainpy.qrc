@@ -1,0 +1,38 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icons/24gl-label.svg</file>
+    <file>icons/logo0.ico</file>
+    <file>icons/mini.svg</file>
+    <file>icons/logo0.png</file>
+    <file>icons/logo1.png</file>
+    <file>icons/vip1.png</file>
+    <file>icons/close2.svg</file>
+    <file>icons/closebrue.svg</file>
+    <file>icons/close3.svg</file>
+    <file>icons/vip1.png</file>
+    <file>icons/copy.svg</file>
+    <file>icons/yijina.png</file>
+    <file>icons/bzhan.png</file>
+    <file>icons/kuaishou.png</file>
+    <file>icons/laba.svg</file>
+    <file>icons/gongneng.svg</file>
+    <file>icons/gongenng2.svg</file>
+    <file>icons/close.svg</file>
+    <file>icons/caidan.svg</file>
+  </qresource>
+  <qresource prefix="img">
+    <file>imgs/wxprice.png</file>
+    <file>imgs/weixinkf.JPG</file>
+    <file>imgs/doulilogo.png</file>
+    <file>imgs/douli.png</file>
+    <file>imgs/douyin1.png</file>
+    <file>imgs/labagif.gif</file>
+    <file>imgs/tool.png</file>
+    <file>imgs/obs1.png</file>
+    <file>imgs/obs.png</file>
+    <file>imgs/zhibopingt2.png</file>
+    <file>imgs/zhibopingtai.png</file>
+    <file>imgs/douyin.png</file>
+    <file>imgs/QQ.png</file>
+  </qresource>
+</RCC>

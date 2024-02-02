@@ -1,0 +1,112 @@
+{
+    "obsconfigs": {
+        "plugins": {
+            "pushButton": {
+                "description": "OBS29.1.3版本",
+                "urls": [                    
+                    "https://wwzi.lanzouj.com/iM7sg19itdof",
+                    "https://wwzi.lanzouj.com/ienf319itfpi"
+                ]
+            },
+            "pushButton_2": {
+                "description": "显示当前时间的插件",
+                "urls": [
+                    "https://wwzi.lanzouj.com/iLWo91923xfe"
+                ]
+            },
+            "pushButton_3": {
+                "description": "高级倒计时插件",
+                "urls": [
+                    "https://wwzi.lanzouj.com/iAibV1923xcb"
+                ]
+            },
+            "pushButton_4": {
+                "description": "让OBS支持多个平台同时推流直播的插件",
+                "urls": [
+                    "https://wwzi.lanzouj.com/iHFsp1923xmb"
+                ]
+            },
+            "pushButton_5": {
+                "description": "只录制你喜欢的视频源",
+                "urls": [
+                    "https://wwzi.lanzouj.com/ikzVE19246be"
+                ]
+            },
+            "pushButton_6": {
+                "description": "将声音显示为可见的波动频谱",
+                "urls": [
+                    "https://wwzi.lanzouj.com/iQdRg19246jc"
+                ]
+            },
+            "pushButton_7": {
+                "description": "展示鼠标、键盘、甚至是各种游戏手柄的操作，可以在游戏操作教学、软件教程类直播中提升直播时的效果",
+                "urls": [
+                    "https://wwzi.lanzouj.com/io8Te1945tih" 
+
+                ]
+            },
+            "pushButton_8": {
+                "description": "滑动转场效果",
+                "urls": [
+                    "https://wwzi.lanzouj.com/iGUki1923xih"
+                ]
+            },
+            "pushButton_9": {
+                "description": "定义场景的切换方法，比如定时",
+                "urls": [
+                    "https://wwzi.lanzouj.com/i3smd1923xaj"
+                ]
+            },
+            "pushButton_10": {
+                "description": "全自动显示切换标题和图标，常见于广电、直播画面的下三分之一处",
+                "urls": [
+                    "https://wwzi.lanzouj.com/itvLm1g5pyvi"
+                ]
+            },
+            "pushButton_11": {
+                "description": "来源是字体天下中的商用免费字体",
+                "urls": [
+                    "https://wwzi.lanzouj.com/ihHjm192pmch",
+                    "https://wwzi.lanzouj.com/ifyLQ192pkha",
+                    "https://wwzi.lanzouj.com/i2aKe192phxi",
+                    "https://wwzi.lanzouj.com/ixKVo192pfdg",
+                    "https://wwzi.lanzouj.com/i9OjT192pdfg",
+                    "https://wwzi.lanzouj.com/im2fA192paoh",
+                    "https://wwzi.lanzouj.com/izv5D192p88j"
+                ]
+            },
+            "pushButton_12": {
+                "description": "使用 NewTek 的 NDI技术通过 IP 添加简单的音频/视频输入和输出，比如手机摄像头",
+                "urls": [
+                    "https://wwzi.lanzouj.com/iv7q11923y9e"
+                ]
+            },
+            "pushButton_13": {
+                "description": "StreamFX 提供了来源镜像、模糊滤镜、着色器滤镜等多种效果",
+                "urls": [
+                    "https://wwzi.lanzouj.com/iu82h19247dc"
+                ]
+            }
+
+
+
+
+
+
+        },
+        "setting": {
+            "pushButton_obs": {
+                "description": "这是谷歌",
+                "urls": [
+                    "www.Google.com"
+                ]
+            },
+            "pushButton_obs1": {
+                "description": "这是谷歌",
+                "urls": [
+                    "www.Google.com"
+                ]
+            }
+        }
+    }
+}

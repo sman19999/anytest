@@ -1,0 +1,1858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>小斗笠直播助手</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="mainpy.qrc">
+    <normaloff>:/icon/icons/logo0.ico</normaloff>:/icon/icons/logo0.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 13px &quot;微软雅黑&quot;;</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(35, 90, 255);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="close_win">
+     <property name="geometry">
+      <rect>
+       <x>774</x>
+       <y>0</y>
+       <width>21</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="mainpy.qrc">
+       <normaloff>:/icon/icons/close3.svg</normaloff>:/icon/icons/close3.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="min_win">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>0</y>
+       <width>21</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="mainpy.qrc">
+       <normaloff>:/icon/icons/mini.svg</normaloff>:/icon/icons/mini.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_logo">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>71</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+border-image: url(:/icon/icons/logo0.png);}
+QToolButton:pressed{
+margin-left: 7px;
+margin-top: 7px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_toptatle" native="true">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>0</y>
+       <width>411</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton{
+border:none;
+color: rgb(255, 255, 255);
+}
+QToolButton:hover{
+background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+}
+QToolButton:pressed{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+QToolButton:checked {
+background-color: qlineargradient(spread:reflect, x1:0.530655, y1:0.034, x2:0.52, y2:1, stop:0 rgba(41, 111, 255, 255), stop:1 rgba(0, 0, 255, 255));
+
+} </string>
+     </property>
+     <widget class="QToolButton" name="toolButton_pingtai">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>100</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>直播平台</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainpy.qrc">
+        <normaloff>:/img/imgs/zhibopingt2.png</normaloff>:/img/imgs/zhibopingt2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_obsset">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>0</y>
+        <width>100</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>OBS设置</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainpy.qrc">
+        <normaloff>:/img/imgs/obs1.png</normaloff>:/img/imgs/obs1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_tool">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>0</y>
+        <width>100</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>主播工具</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainpy.qrc">
+        <normaloff>:/img/imgs/tool.png</normaloff>:/img/imgs/tool.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="qqqun">
+     <property name="geometry">
+      <rect>
+       <x>613</x>
+       <y>0</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="vip_dates">
+     <property name="geometry">
+      <rect>
+       <x>615</x>
+       <y>55</y>
+       <width>181</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 0, 0);
+background-color: transparent;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Softwarename">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>小斗笠直播助手</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pt_pape" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>801</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(250, 250, 250);</string>
+    </property>
+    <widget class="QFrame" name="div_pt1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>141</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(247, 249, 255);
+border-right: 1px solid white;
+border-right-color: rgb(141, 141, 141);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QToolButton" name="toolButton_dy">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>141</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+    border:none;
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+}
+QToolButton:hover{
+background-color: rgb(218, 218, 218);
+}
+
+QToolButton:checked{
+    
+	color: rgb(0, 85, 255);
+    border-left: 3px solid white;
+	border-left-color: rgb(0, 0, 255);    
+	background-color: rgb(218, 218, 218);
+}</string>
+      </property>
+      <property name="text">
+       <string>抖音</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainpy.qrc">
+        <normaloff>:/img/imgs/douyin1.png</normaloff>:/img/imgs/douyin1.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextBesideIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_ks">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>310</y>
+        <width>141</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+    border:none;
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+}
+QToolButton:hover{
+background-color: rgb(218, 218, 218);
+}
+
+QToolButton:checked{
+    
+	color: rgb(0, 85, 255);
+    border-left: 3px solid white;
+	border-left-color: rgb(0, 0, 255);    
+	background-color: rgb(218, 218, 218);
+}</string>
+      </property>
+      <property name="text">
+       <string>快手</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainpy.qrc">
+        <normaloff>:/icon/icons/kuaishou.png</normaloff>:/icon/icons/kuaishou.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextBesideIcon</enum>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_bili">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>180</y>
+        <width>141</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton{
+    border:none;
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+}
+QToolButton:hover{
+background-color: rgb(218, 218, 218);
+}
+
+QToolButton:checked{
+    
+	color: rgb(0, 85, 255);
+    border-left: 3px solid white;
+	border-left-color: rgb(0, 0, 255);    
+	background-color: rgb(218, 218, 218);
+}</string>
+      </property>
+      <property name="text">
+       <string>B站</string>
+      </property>
+      <property name="icon">
+       <iconset resource="mainpy.qrc">
+        <normaloff>:/icon/icons/bzhan.png</normaloff>:/icon/icons/bzhan.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextBesideIcon</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="div_pg2">
+     <property name="geometry">
+      <rect>
+       <x>139</x>
+       <y>-1</y>
+       <width>661</width>
+       <height>521</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="ser_url">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>440</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>服务器：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="key_url">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>480</y>
+        <width>61</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>推流码：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ser_line">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>440</y>
+        <width>461</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="key_line">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>480</y>
+        <width>461</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ser_copy">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>440</y>
+        <width>21</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color: transparent;
+border: none
+}
+QPushButton:pressed {
+    padding-top: 4px;
+    padding-left: 4px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="mainpy.qrc">
+        <normaloff>:/icon/icons/copy.svg</normaloff>:/icon/icons/copy.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="key_copy">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>480</y>
+        <width>21</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background-color: transparent;
+border: none
+}
+QPushButton:pressed {
+    padding-top: 4px;
+    padding-left: 4px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="mainpy.qrc">
+        <normaloff>:/icon/icons/copy.svg</normaloff>:/icon/icons/copy.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QFrame" name="div_video">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>0</y>
+        <width>291</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="video_jishu">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>30</y>
+         <width>200</width>
+         <height>200</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="guanggao_id">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>230</y>
+         <width>291</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>0</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>-----------**二维码**------------</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="xx_live">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>0</y>
+        <width>341</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>-------------**抖音推流码获取**---------------------</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="xx_live_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>220</y>
+        <width>301</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>----------------**开播提示**---------------------</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>59</y>
+        <width>351</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="dy_0">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>30</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:checked{  	 
+	color: rgb(0, 85, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>0粉开播</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="dy_50">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>30</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:checked{  	 
+	color: rgb(0, 85, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>50粉开播</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="dy_1000">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>-1</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:checked{  	 
+	color: rgb(0, 85, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>伴侣开播</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="bigin_live">
+      <property name="geometry">
+       <rect>
+        <x>565</x>
+        <y>444</y>
+        <width>81</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-image: url(:/icon/icons/yijina.png);
+    text-align: center;
+    border: none; 
+    
+}
+QPushButton:pressed {
+    margin-left: 7px;
+    margin-top: 7px;
+}</string>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="text">
+       <string>一键开播   </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="kaibotishi">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>351</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 85, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>bigin_live</zorder>
+     <zorder>ser_url</zorder>
+     <zorder>key_url</zorder>
+     <zorder>ser_line</zorder>
+     <zorder>key_line</zorder>
+     <zorder>ser_copy</zorder>
+     <zorder>key_copy</zorder>
+     <zorder>div_video</zorder>
+     <zorder>xx_live</zorder>
+     <zorder>xx_live_2</zorder>
+     <zorder>frame_2</zorder>
+     <zorder>kaibotishi</zorder>
+    </widget>
+    <zorder>div_pg2</zorder>
+    <zorder>div_pt1</zorder>
+   </widget>
+   <widget class="QWidget" name="obs_page" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>800</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 249, 255);</string>
+    </property>
+    <widget class="QFrame" name="div_video_2">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>0</y>
+       <width>291</width>
+       <height>461</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="video_jishu_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>291</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>相关视频</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>291</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>-----------**相关视频**------------</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="guanggao_id_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>230</y>
+        <width>291</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>虚位ID</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>0</y>
+       <width>291</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>-----------**插件下载**------------</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_int">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>430</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:pressed {
+    
+	background-color: rgb(16, 108, 255);
+    padding-top: 7px;
+    padding-left: 7px;
+}</string>
+     </property>
+     <property name="text">
+      <string>安装</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>511</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked { 
+color: rgb(0, 85, 255);}</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>511</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>3</number>
+       </property>
+       <property name="rightMargin">
+        <number>3</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>22</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>20</number>
+       </property>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>倒计时</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pushButton">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>OBS下载</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>时间显示</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton_7">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>鼠键显示</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>源录制</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>多路推流</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>声波显示</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>转场滤镜</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="pushButton_10">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>动画标题</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>场景切换</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QPushButton" name="pushButton_11">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>字体</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QPushButton" name="pushButton_12">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>NDI</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="pushButton_13">
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>StreamFX</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="chajiantxt">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>240</y>
+       <width>441</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 85, 255);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="start_page" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>800</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 249, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>150</y>
+       <width>301</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(0, 0, 0, 0), stop:0.52 rgba(0, 0, 0, 0), stop:0.565 rgba(82, 121, 76, 33), stop:0.65 rgba(159, 235, 148, 64), stop:0.721925 rgba(255, 238, 150, 129), stop:0.77 rgba(255, 128, 128, 204), stop:0.89 rgba(191, 128, 255, 64), stop:1 rgba(0, 0, 0, 0));
+color: rgb(0, 85, 255);
+font: 35px &quot;楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>让直播变得更简单</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Price_page" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>800</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 249, 255);</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>0</y>
+       <width>291</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="huiyuantime">
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="chongzhitime">
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>微信客服：9点-23点</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="huiyuanjiage">
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>会员价格：30元/月</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>0</y>
+       <width>77</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="chongzhi">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{background-color: rgb(255, 103, 105)}
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-left: 7px;
+}</string>
+        </property>
+        <property name="text">
+         <string>充值会员</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="weixinkefu">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{background-color: rgb(255, 103, 105)}
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-left: 7px;
+}</string>
+        </property>
+        <property name="text">
+         <string>联系客服</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="vipinputtxt">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{background-color: rgb(255, 103, 105)}
+QPushButton:pressed {
+    padding-top: 7px;
+    padding-left: 7px;
+}</string>
+        </property>
+        <property name="text">
+         <string>本地授权</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QFrame" name="chongzhihuiyuan">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>150</y>
+       <width>271</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>241</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/img/imgs/wxprice.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    background-color: transparent; /* 设置背景颜色为透明 */
+    border: none; /* 移除边框 */</string>
+      </property>
+      <property name="text">
+       <string>充值备注中填写识别码：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="chongzhibz">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>111</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 0, 0);
+background-color: transparent; /* 设置背景颜色为透明 */
+border: none; /* 移除边框 */</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>500</y>
+       <width>391</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>充值超过两个小时没到账，或忘记填写备注，在工作时间联系客服解决！</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="wxkefe">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>145</y>
+       <width>271</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>241</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/img/imgs/weixinkf.JPG);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="shouquankey">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>150</y>
+       <width>481</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:checked { 
+color: rgb(0, 85, 255);}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="vipinput">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>421</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>请输入授权KEY</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="keybuttonyes">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>130</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:pressed{    
+	color: rgb(0, 85, 255);
+    padding-top: 4px;
+    padding-left: 4px;
+}</string>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </widget>
+    <zorder>verticalLayoutWidget_2</zorder>
+    <zorder>verticalLayoutWidget</zorder>
+    <zorder>label_9</zorder>
+    <zorder>wxkefe</zorder>
+    <zorder>chongzhihuiyuan</zorder>
+    <zorder>shouquankey</zorder>
+   </widget>
+   <widget class="QWidget" name="music_page" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>800</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 249, 255);</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="tool_page" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>800</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(247, 249, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>200</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>-1</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>待更新</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>frame</zorder>
+   <zorder>music_page</zorder>
+   <zorder>tool_page</zorder>
+   <zorder>Price_page</zorder>
+   <zorder>pt_pape</zorder>
+   <zorder>obs_page</zorder>
+   <zorder>start_page</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="mainpy.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>close_win</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>788</x>
+     <y>13</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>846</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>min_win</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>761</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>853</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
